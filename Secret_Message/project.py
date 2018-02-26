@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 import os
 def renameFiles():
 	files_list = os.listdir(r"D:\Programming\My Projects\UdacityFullStakePython\Secret_Message\prank")

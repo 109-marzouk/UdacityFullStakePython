@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 import turtle
 def my_paint():
 	window = turtle.Screen()

@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 from twilio.rest import Client
 account_sid = "my account_sid"
 auth_token = "my auth_token"

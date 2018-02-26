@@ -1,4 +1,6 @@
-"""Stores details of movies and displays them on a website."""
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 import fresh_tomatoes
 import media
 

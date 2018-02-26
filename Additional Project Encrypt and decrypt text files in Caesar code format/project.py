@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 import os
 def EncryptTheSentence(sen, key=1):
 	if sen != "" and (1 <= key <= 25):

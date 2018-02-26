@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# By Mohamed Marzouk
+# facebook.com/MohamedMarzouk23
 import urllib
 def read_text():
     quotes = open(r"C:\Users\Mohamed Marzouk\Desktop\movie_quotes.txt")
