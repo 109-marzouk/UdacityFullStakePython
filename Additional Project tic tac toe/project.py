@@ -98,10 +98,11 @@ while continue_game == "y":
 				first_player_score += 1
 			elif "O" in GameStatus(places_in_board) and first_player_letter == "O":
 				first_player_score += 1
-			if "X" in GameStatus(places_in_board) and second_player_letter == "X":
+			elif "X" in GameStatus(places_in_board) and second_player_letter == "X":
 				second_player_score += 1
 			elif "O" in GameStatus(places_in_board) and second_player_letter == "O":
 				second_player_score += 1
+			header_score = "||       " + first_player_name + "( " + first_player_letter + " ): " + str(first_player_score) + "     ||      " + second_player_name + "( " + second_player_letter + " ): " + str(second_player_score) + "      ||"
 			print "=" * len(header_score)
 			print header_score
 			print "=" * len(header_score)
@@ -128,7 +129,7 @@ while continue_game == "y":
 				first_player_score += 1
 			elif "O" in GameStatus(places_in_board) and first_player_letter == "O":
 				first_player_score += 1
-			if "X" in GameStatus(places_in_board) and second_player_letter == "X":
+			elif "X" in GameStatus(places_in_board) and second_player_letter == "X":
 				second_player_score += 1
 			elif "O" in GameStatus(places_in_board) and second_player_letter == "O":
 				second_player_score += 1
