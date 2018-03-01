@@ -41,7 +41,14 @@ def GameStatus(my_dict):
 			return "continue"
 		else:
 			return "draw"
-
+def Board_print():
+	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
+	print "|  " + places_in_board['7'] + "  |  " + places_in_board['8'] + "  |  " + places_in_board['9'] + "  |  "
+	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
+	print "|  " + places_in_board['4'] + "  |  " + places_in_board['5'] + "  |  " + places_in_board['6'] + "  |  "
+	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
+	print "|  " + places_in_board['1'] + "  |  " + places_in_board['2'] + "  |  " + places_in_board['3'] + "  |  "
+	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
 print "Welcome In My Game By Mohamed Marzouk \n====================================="
 first_player_name = raw_input("Enter First Player Name: ").upper()
 second_player_name = raw_input("Enter Second Player Name: ").upper()
@@ -53,7 +60,7 @@ if first_player_letter == "X":
 elif first_player_letter == "O":
 	second_player_letter = "X"
 else:
-	while first_player_letter != "X" or first_player_letter !=  "O":
+	while first_player_letter != "X" and first_player_letter !=  "O":
 		print "You Should choose X or O only"
 		first_player_letter = raw_input(first_player_name + " Enter Your Letter: ").upper()
 first_player_score = 0
@@ -84,13 +91,7 @@ while continue_game == "y":
 					"8": " ", # Top Center
 					"9": " ", # Top Right
 					}
-	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-	print "|  " + places_in_board['7'] + "  |  " + places_in_board['8'] + "  |  " + places_in_board['9'] + "  |  "
-	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-	print "|  " + places_in_board['4'] + "  |  " + places_in_board['5'] + "  |  " + places_in_board['6'] + "  |  "
-	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-	print "|  " + places_in_board['1'] + "  |  " + places_in_board['2'] + "  |  " + places_in_board['3'] + "  |  "
-	print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
+	Board_print()
 	while True:
 		if "Winner" in GameStatus(places_in_board):
 			print GameStatus(places_in_board)
@@ -115,14 +116,7 @@ while continue_game == "y":
 			print "Sorry this place is full or Does not exist"
 			first_player = raw_input(first_player_name + ": ").replace(' ', '')
 		places_in_board[first_player] = first_player_letter
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['7'] + "  |  " + places_in_board['8'] + "  |  " + places_in_board['9'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['4'] + "  |  " + places_in_board['5'] + "  |  " + places_in_board['6'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['1'] + "  |  " + places_in_board['2'] + "  |  " + places_in_board['3'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-
+		Board_print()
 		if "Winner" in GameStatus(places_in_board):
 			print GameStatus(places_in_board)
 			if "X" in GameStatus(places_in_board) and first_player_letter == "X":
@@ -146,13 +140,7 @@ while continue_game == "y":
 			print "Sorry this place is full or Does not exist"
 			second_player = raw_input(second_player_name + ": ").replace(' ', '')
 		places_in_board[second_player] = second_player_letter
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['7'] + "  |  " + places_in_board['8'] + "  |  " + places_in_board['9'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['4'] + "  |  " + places_in_board['5'] + "  |  " + places_in_board['6'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
-		print "|  " + places_in_board['1'] + "  |  " + places_in_board['2'] + "  |  " + places_in_board['3'] + "  |  "
-		print "*" + "-" * 5 + "*" + "-" * 5 + "*" + "-" * 5 + "*"
+		Board_print()
 	continue_game = raw_input("Enter y To continue or any letter to Close this Game: ")
 
 
