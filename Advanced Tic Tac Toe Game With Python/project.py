@@ -209,7 +209,7 @@ if user_choose == "1":
 					computer_input = '5'
 				elif places_in_board['5'] + places_in_board['8'] == player.letter * 2 and places_in_board['2'] == " ":
 					computer_input = '2'
-				elif places_in_board['3'] + places_in_board['6'] == player.letter * 2and places_in_board['9'] == " ":
+				elif places_in_board['3'] + places_in_board['6'] == player.letter * 2 and places_in_board['9'] == " ":
 					computer_input = '9'
 				elif places_in_board['3'] + places_in_board['9'] == player.letter * 2 and places_in_board['6'] == " ":
 					computer_input = '6'
